@@ -28,61 +28,40 @@
 
 CSCI 490 is a project-centered course that builds practical and theoretical competencies in AI alignment research engineering. Drawing on the publicly available ARENA (Alignment Research Engineer Accelerator) curriculum, this course trains students to work on foundational problems in technical AI safety. Over twelve weeks, students progress from deep learning fundamentals through transformer mechanistic interpretability, reinforcement learning, large language model (LLM) evaluation, and alignment science.
 
-Topics include building and training neural networks in PyTorch, constructing transformers from scratch, applying mechanistic interpretability techniques to understand model internals, training reinforcement learning agents, designing LLM benchmarks, and engaging with cutting-edge alignment research. The course is programming-intensive and emphasizes hands-on implementation alongside theoretical grounding.
-
-The course meets once per week for approximately three hours of synchronous instruction (approximately 36 contact hours over the semester), supplemented by self-paced ARENA exercises completed between sessions.
-
 ---
 
 ## Prerequisites
 
-- CSCI 335 or CSCI 340 (Algorithms and Data Structures), or instructor permission
 - Proficiency in Python (equivalent to CSCI 127 or higher)
 - Familiarity with linear algebra and basic calculus (MATH 155 / MATH 150 or equivalent)
 - Recommended: prior exposure to machine learning concepts (CSCI 381 or equivalent)
 
 ---
 
-## Required Materials
-
-All materials are freely available — there is no required textbook to purchase.
-
-| Resource | Access |
-|---|---|
-| ARENA Curriculum | [learn.arena.education](https://learn.arena.education) |
-| ARENA GitHub Repository | [github.com/callummcdougall/ARENA_2.0](https://github.com/callummcdougall/ARENA_2.0) |
-| PyTorch Documentation | pytorch.org/docs |
-| TransformerLens Library | github.com/neelnanda-io/TransformerLens |
-| Weights & Biases (W&B) | wandb.ai (free academic account) |
-| OpenAI Gym | gymnasium.farama.org |
-
-**Software:** Python 3.10+, Jupyter Notebooks or Google Colab (GPU-enabled). A GPU is strongly recommended; Colab Pro access (~$10/month) is a low-cost option if you do not have local GPU hardware.
-
----
 
 ## Course Learning Outcomes
 
 Upon successful completion of this course, students will be able to:
 
-1. **Implement** deep learning components (CNNs, ResNets, backpropagation, attention mechanisms) from scratch using PyTorch.
-2. **Build and train** transformer language models end-to-end, including tokenization and autoregressive generation.
-3. **Apply** mechanistic interpretability methods — including activation patching, circuit analysis, and sparse autoencoders — to analyze the internal computations of language models.
-4. **Train** reinforcement learning agents using policy gradient and Q-learning methods, and apply RLHF to fine-tune a language model.
-5. **Design and evaluate** multiple-choice LLM benchmarks and assess language model agent behavior.
-6. **Critically analyze** alignment-relevant phenomena such as emergent misalignment, reward hacking, and LLM psychology.
-7. **Communicate** technical AI safety research findings in written and oral formats appropriate for a research audience.
+1. **Build and train** transformer language models end-to-end, including tokenization and autoregressive generation.
+2. **Apply** mechanistic interpretability methods — including activation patching, circuit analysis, and sparse autoencoders — to analyze the internal computations of language models.
+3. **Train** reinforcement learning agents using policy gradient and Q-learning methods, and apply RLHF to fine-tune a language model.
+4. **Design and evaluate** multiple-choice LLM benchmarks and assess language model agent behavior.
+5. **Critically analyze** alignment-relevant phenomena such as emergent misalignment, reward hacking, and LLM psychology.
+6. **Communicate** technical AI safety research findings in written and oral formats appropriate for a research audience.
 
 ---
 
 ## Course Format — Online Synchronous
 
-All sessions meet live via Zoom once per week during the scheduled meeting time. Attendance is expected for the full session. Each weekly session (~3 hours) is structured as follows:
+All sessions meet live via Zoom once per week during the scheduled meeting time. Attendance is expected for the full session. Each weekly session (~2 hours 30 minutes) is structured as follows:
 
 | Block | Duration | Activity |
 |---|---|---|
-| Lecture / Concept Introduction | ~75 min | Instructor-led with live demos |
-| Coding Lab / Guided Exercises | ~90 min | Students work on ARENA exercises; instructor circulates |
-| Debrief / Q&A | ~15 min | Key takeaways, preview of next week |
+| Lecture Part I | 45 min | Instructor-led presentation and live demos |
+| Break | 15 min | — |
+| Lecture Part II | 45 min | Instructor-led presentation and live demos |
+| Coding Lab | 60 min | Students work on ARENA exercises; instructor circulates |
 
 Sessions will be recorded and posted to Brightspace within 24 hours for asynchronous review. Recordings do not substitute for live attendance.
 
