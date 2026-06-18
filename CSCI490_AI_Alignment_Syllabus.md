@@ -51,62 +51,6 @@ Upon successful completion of this course, students will be able to:
 
 ---
 
-## Course Contents
-
-The course follows the ARENA 3.0 curriculum ([github.com/callummcdougall/ARENA_3.0](https://github.com/callummcdougall/ARENA_3.0)), organized into four chapters:
-
-### Chapter 0 — Fundamentals
-
-| Section | Topics |
-|---|---|
-| 0.0 Prerequisites | Neural networks, linear algebra, probability & statistics, calculus, information theory, einops/einsum tensor manipulation |
-| 0.1 Ray Tracing | Batched tensor operations in PyTorch; GPU-style parallelism; type annotations and coding best practices |
-| 0.2 CNNs & ResNets | `nn.Module`, training loops with dataloaders, convolution implementation, batch normalization, ResNet34, feature extraction & fine-tuning |
-| 0.3 Optimization & Hyperparameters | SGD, RMSprop, Adam implemented from scratch; loss landscapes; Weights & Biases; hyperparameter sweeps; distributed training (`torch.distributed`) |
-| 0.4 Backpropagation | Computational graphs; implementing autograd from scratch; training an MLP on MNIST with custom backprop |
-| 0.5 VAEs & GANs | Autoencoders, variational autoencoders (VAEs), reparameterization trick, generative adversarial networks (GANs), transposed convolutions |
-
-### Chapter 1 — Transformer Interpretability
-
-| Section | Topics |
-|---|---|
-| 1.1 Transformer from Scratch | GPT-2 style decoder; multi-head self-attention; positional encodings; layer norm; autoregressive sampling (greedy, top-k, nucleus) |
-| 1.2 Intro to Mech Interp | TransformerLens: hooked transformers, activation caching, `circuitsvis`; induction heads; hook-based ablation; QK/OV factored matrix analysis |
-| 1.3.1 Linear Probes / Probing for Deception | Training linear classifiers on residual stream activations; probing for deceptive reasoning patterns |
-| 1.3.2 Function Vectors & Model Steering | `nnsight` library; h-vectors; task-encoding hidden states; causal interventions; steering vectors in GPT2-XL |
-| 1.3.3 Interpretability with SAEs | Sparse autoencoder training; monosemantic feature extraction; feature visualization in real models |
-| 1.4.1 Indirect Object Identification | Full IOI circuit replication in GPT-2 Small; name mover heads; path patching; logit attribution |
-| 1.5.4 Toy Models of Superposition & SAEs | Superposition hypothesis; polysemanticity; feature geometry in toy models; SAEs on superposed representations |
-
-### Chapter 2 — Reinforcement Learning
-
-| Section | Topics |
-|---|---|
-| 2.1 Intro to RL | MDPs; policies; value functions; Bellman equations; analytic and sampling-based solutions |
-| 2.2 DQN & Vanilla Policy Gradient | Deep Q-Networks with experience replay and target networks; VPG with baseline; OpenAI Gym environments |
-| 2.3 PPO | Clipped surrogate objective; entropy bonus; generalized advantage estimation (GAE) |
-| 2.4 RLHF | Reward model training from human preferences; fine-tuning a language model via PPO |
-
-### Chapter 3 — LLM Evaluations
-
-| Section | Topics |
-|---|---|
-| 3.1 Intro to Evals | LLM API usage; alignment faking case study; threat modeling; safety cases; evaluation specification |
-| 3.2 Dataset Generation | Synthetic dataset construction; quality control for evaluation datasets |
-| 3.3 Running Evals with Inspect | UK AISI Inspect framework; running model evals at scale; interpreting results |
-| 3.4 LLM Agents | Agent architectures; tool use; agent loops; agent evaluation methodologies |
-
-### Chapter 4 — Alignment Science
-
-| Section | Topics |
-|---|---|
-| 4.1 Emergent Misalignment | Power-seeking; sycophancy; deceptive alignment; sandbagging; corrigibility; self-preservation; non-myopia |
-| 4.2 Science of Misalignment | Theoretical frameworks for understanding AI misalignment |
-| 4.3 Interpreting Reasoning Models | Mechanistic analysis of chain-of-thought and reasoning model internals |
-| 4.4 LLM Psychology & Persona Vectors | Behavioral consistency; persona steering; model "psychology" experiments |
-
----
-
 ## Course Format — Online Synchronous
 
 All sessions meet live via Zoom once per week during the scheduled meeting time. Attendance is expected for the full session. Each weekly session (~2 hours 30 minutes) is structured as follows:
@@ -179,7 +123,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 ---
 
 ### Unit I — Fundamentals of Deep Learning (Weeks 1–3)
-*ARENA 3.0 Chapter 0*
 
 ---
 
@@ -189,7 +132,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 
 | | |
 |---|---|
-| **ARENA Reference** | Ch0 §0.0 Prerequisites, §0.1 Ray Tracing |
 | **Assignment 1 Due** | Before Week 2 session |
 
 **Outcomes:** Students are fluent in PyTorch tensor operations, einops/einsum notation, and batched matrix computations.
@@ -202,7 +144,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 
 | | |
 |---|---|
-| **ARENA Reference** | Ch0 §0.2 CNNs & ResNets, §0.3 Optimization & Hyperparameters |
 | **Assignment 2 Due** | Before Week 3 session |
 
 **Outcomes:** Students can build and train a ResNet from scratch, track and sweep experiments with W&B, and implement core optimizers by hand.
@@ -215,7 +156,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 
 | | |
 |---|---|
-| **ARENA Reference** | Ch0 §0.4 Backpropagation, §0.5 VAEs & GANs |
 | **Quiz 1** | Administered at start of class (Unit I — Ch0 material) |
 | **Assignment 3 Due** | Before Week 4 session |
 
@@ -224,7 +164,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 ---
 
 ### Unit II — Transformer Architecture & Mechanistic Interpretability (Weeks 4–8)
-*ARENA 3.0 Chapter 1*
 
 ---
 
@@ -234,7 +173,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 
 | | |
 |---|---|
-| **ARENA Reference** | Ch1 §1.1 Transformer from Scratch |
 | **Assignment 4 Due** | Before Week 5 session |
 
 **Outcomes:** Students can implement and train a GPT-style transformer from scratch and generate text from it.
@@ -247,7 +185,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 
 | | |
 |---|---|
-| **ARENA Reference** | Ch1 §1.2 Intro to Mech Interp |
 | **Assignment 5 Due** | Before Week 6 session |
 
 **Outcomes:** Students can use TransformerLens to inspect model internals, identify induction heads programmatically, and reason about circuit behavior from both activations and weights.
@@ -260,7 +197,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 
 | | |
 |---|---|
-| **ARENA Reference** | Ch1 §1.3.1 Linear Probes / Probing for Deception, §1.3.2 Function Vectors & Model Steering |
 | **Quiz 2** | Administered at start of class (Unit II Weeks 4–5 material) |
 | **Assignment 6 Due** | Before Week 7 session |
 
@@ -274,7 +210,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 
 | | |
 |---|---|
-| **ARENA Reference** | Ch1 §1.3.3 Interpretability with SAEs, §1.4.1 Indirect Object Identification |
 | **Assignment 7 Due** | Before Week 8 session |
 
 **Outcomes:** Students can train and interpret a sparse autoencoder and replicate a published circuit-level analysis in a real language model.
@@ -287,7 +222,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 
 | | |
 |---|---|
-| **ARENA Reference** | Ch1 §1.5.4 Toy Models of Superposition & SAEs |
 | **Assignment 8 Due** | Before Week 9 session |
 
 **Outcomes:** Students can explain the superposition hypothesis, train toy SAEs, and connect feature geometry to the challenges of interpretability at scale.
@@ -295,7 +229,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 ---
 
 ### Unit III — Reinforcement Learning & RLHF (Weeks 9–10)
-*ARENA 3.0 Chapter 2*
 
 ---
 
@@ -305,7 +238,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 
 | | |
 |---|---|
-| **ARENA Reference** | Ch2 §2.1 Intro to RL, §2.2 DQN & VPG |
 | **Assignment 9 Due** | Before Week 10 session |
 
 **Outcomes:** Students can implement and train DQN and VPG agents on standard Gym environments and articulate the exploration–exploitation tradeoff.
@@ -318,7 +250,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 
 | | |
 |---|---|
-| **ARENA Reference** | Ch2 §2.3 PPO, §2.4 RLHF |
 | **Quiz 3** | Administered at start of class (Unit III Week 9 material) |
 | **Assignment 10 Due** | Before Week 11 session |
 
@@ -327,7 +258,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 ---
 
 ### Unit IV — LLM Evaluation & Alignment Science (Weeks 11–12)
-*ARENA 3.0 Chapters 3 & 4*
 
 ---
 
@@ -337,7 +267,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 
 | | |
 |---|---|
-| **ARENA Reference** | Ch3 §3.1 Intro to Evals, §3.2 Dataset Generation, §3.3 Running Evals with Inspect |
 
 **Outcomes:** Students can design a threat model, generate a synthetic evaluation dataset, and execute a model evaluation using the Inspect framework.
 
@@ -349,7 +278,6 @@ In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirm
 
 | | |
 |---|---|
-| **ARENA Reference** | Ch3 §3.4 LLM Agents, Ch4 §4.1 Emergent Misalignment, §4.2 Science of Misalignment, §4.3 Interpreting Reasoning Models, §4.4 LLM Psychology & Persona Vectors |
 
 **Outcomes:** Students can build and evaluate a basic LM agent and analyze alignment failure modes with reference to the experimental and theoretical literature.
 
