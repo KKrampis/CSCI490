@@ -10,7 +10,7 @@
 |---|---|
 | **Course Number** | CSCI 490 |
 | **Credits** | 3 credits |
-| **Semester** | Fall 2026 |
+| **Semester** | Spring 2027 |
 | **Format** | Online Synchronous |
 | **Meeting Day** | Tuesday |
 | **Meeting Time** | 10:00 AM – 1:00 PM ET |
